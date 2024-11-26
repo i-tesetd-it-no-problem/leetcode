@@ -1,0 +1,77 @@
+
+UseTab:          Always
+IndentWidth:     4
+TabWidth:        4
+ContinuationIndentWidth: 4
+IndentCaseLabels: false
+
+ColumnLimit:     150
+BreakBeforeBraces: Linux
+
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpaceAroundPointerQualifiers: Before
+
+DerivePointerAlignment: false
+PointerAlignment: Right
+
+IndentPPDirectives: None
+
+IndentGotoLabels: false
+
+ReflowComments: false
+
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+AllowShortFunctionsOnASingleLine: None
+
+SortIncludes: false
+
+AlignTrailingComments: true
+AlignConsecutiveAssignments: false
+AlignOperands: false
+AlignAfterOpenBracket: DontAlign
+
+BreakStringLiterals: false
+
+BraceWrapping:
+  AfterClass:      false
+  AfterControlStatement: false
+  AfterEnum:       false
+  AfterFunction:   false
+  AfterNamespace:  false
+  AfterStruct:     false
+  AfterUnion:      false
+  BeforeCatch:     false
+  BeforeElse:      false
+  IndentBraces:    false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+StatementMacros: []
+
+
+PenaltyBreakComment:        300
+PenaltyBreakFirstLessLess:  120
+PenaltyBreakString:         1000
+PenaltyExcessCharacter:     1000000
+PenaltyReturnTypeOnItsOwnLine: 200
+
+IndentWrappedFunctionNames: false
+
+MaxEmptyLinesToKeep: 1
+
+NamespaceIndentation: None
+
+AccessModifierOffset: -8
+
+AllowAllParametersOfDeclarationOnNextLine: false
+
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+AlwaysBreakAfterReturnType: None
+
+Cpp11BracedListStyle: false

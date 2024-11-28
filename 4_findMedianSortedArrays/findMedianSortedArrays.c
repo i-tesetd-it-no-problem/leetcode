@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
 #include <limits.h>
@@ -9,7 +8,10 @@
 算法的时间复杂度应该为 O(log (m+n)) 。
 */
 
+// 时间复杂度 O(m+n)
 // #define USE_O_M_N
+
+// 时间复杂度 O(log(m+n))
 #define USE_O_LOG_M_N
 
 #if !defined(USE_O_M_N) && !defined(USE_O_LOG_M_N)
@@ -124,13 +126,10 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
 			else
 				return (MAX(nums1_left, nums2_left) + MIN(nums1_right, nums2_right)) / 2.0; // 偶数
 
-		} else if (nums1_left > nums2_right) {
-			// i 过大
-			right = i - 1;
-		} else {
-			// i 过小
-			left = i + 1;
-		}
+		} else if (nums1_left > nums2_right)
+			right = i - 1; // i 过大
+		else
+			left = i + 1; // i 过小
 	}
 
 	return 0.0;

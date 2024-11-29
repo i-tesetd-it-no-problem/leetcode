@@ -27,7 +27,7 @@ struct number_hash_table {
 int number_hash_init(struct number_hash_table *hash_table, size_t table_size);
 
 /**
- * @brief 插入元素到哈希表
+ * @brief 插入元素到哈希表, 相同元素会伸长链表
  *
  * @param hash_table 哈希表实例
  * @param value 插入的值
